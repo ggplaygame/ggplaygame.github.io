@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - 游戏隐私条款</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        p {
+            margin: 15px 0;
+        }
+        .section {
+            margin-top: 30px;
+        }
+        .section-title {
+            font-weight: bold;
+        }
+        .language-switcher {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="language-switcher">
+        <button onclick="toggleLanguage()">English / 中文</button>
+    </div>
+
+    <div class="content">
+        <h1>Privacy Policy - 游戏隐私条款</h1>
+        
+        <div class="section">
+            <h2 class="section-title">1. Introduction / 介绍</h2>
+            <p><strong>English:</strong> Welcome to our game! We value your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, and protect your data.</p>
+            <p><strong>中文:</strong> 欢迎来到我们的游戏！我们重视您的隐私，并致力于保护您的个人信息。本隐私条款解释了我们如何收集、使用和保护您的数据。</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">2. Information We Collect / 我们收集的信息</h2>
+            <p><strong>English:</strong> We may collect the following types of information when you use our game:</p>
+            <ul>
+                <li>Personal identification information (such as name and email address)</li>
+                <li>Device information (such as model, operating system, and IP address)</li>
+                <li>Usage data (such as how you interact with the game, in-game purchases, etc.)</li>
+            </ul>
+            <p><strong>中文:</strong> 当您使用我们的游戏时，我们可能会收集以下类型的信息：</p>
+            <ul>
+                <li>个人身份信息（如姓名和电子邮件地址）</li>
+                <li>设备信息（如型号、操作系统和IP地址）</li>
+                <li>使用数据（如您如何与游戏互动、游戏内购买等）</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">3. How We Use Your Information / 我们如何使用您的信息</h2>
+            <p><strong>English:</strong> The information we collect is used to improve the game experience, provide customer support, send game updates, and personalize content. We may also use your information for security purposes and to comply with legal obligations.</p>
+            <p><strong>中文:</strong> 我们收集的信息用于改善游戏体验、提供客户支持、发送游戏更新并个性化内容。我们还可能使用您的信息进行安全目的，并遵守法律义务。</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">4. Data Security / 数据安全</h2>
+            <p><strong>English:</strong> We take the security of your data seriously and implement various security measures to protect it. However, no method of transmission over the internet is completely secure, and we cannot guarantee the absolute security of your data.</p>
+            <p><strong>中文:</strong> 我们非常重视您的数据安全，并采取多种安全措施进行保护。然而，任何通过互联网传输的数据都无法完全保证安全，我们无法保证您的数据绝对安全。</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">5. Third-Party Services / 第三方服务</h2>
+            <p><strong>English:</strong> Our game may use third-party services that collect, store, and process your information. These services are governed by their own privacy policies, and we encourage you to review them.</p>
+            <p><strong>中文:</strong> 我们的游戏可能会使用第三方服务来收集、存储和处理您的信息。这些服务受其自身隐私政策的约束，我们鼓励您查看它们。</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">6. Children’s Privacy / 儿童隐私</h2>
+            <p><strong>English:</strong> Our game is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe we have collected such information, please contact us immediately.</p>
+            <p><strong>中文:</strong> 我们的游戏不适用于13岁以下的儿童。我们不会故意收集13岁以下儿童的个人信息。如果您认为我们收集了此类信息，请立即与我们联系。</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">7. Changes to this Privacy Policy / 隐私政策的变更</h2>
+            <p><strong>English:</strong> We may update this Privacy Policy from time to time. When we make changes, we will post the updated policy on this page and notify you accordingly.</p>
+            <p><strong>中文:</strong> 我们可能会不时更新此隐私政策。当我们进行更改时，我们将把更新后的政策发布在此页面，并相应地通知您。</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">8. Contact Us / 联系我们</h2>
+            <p><strong>English:</strong> If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
+            <p>Email: yanglidong@gmail.com</p>
+            <p><strong>中文:</strong> 如果您对本隐私政策有任何疑问或 concerns，请通过以下方式与我们联系：</p>
+            <p>电子邮件: yanglidong@gmail.com</p>
+        </div>
+    </div>
+
+    <script>
+        let language = 'en';
+
+        function toggleLanguage() {
+            language = language === 'en' ? 'zh' : 'en';
+            const sections = document.querySelectorAll('.section');
+            sections.forEach((section) => {
+                const paragraphs = section.querySelectorAll('p');
+                paragraphs.forEach((p) => {
+                    const enText = p.querySelector('strong');
+                    if (language === 'en') {
+                        p.textContent = enText ? enText.textContent : p.textContent;
+                    } else {
+                        p.textContent = p.getAttribute('data-zh');
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+</html>
